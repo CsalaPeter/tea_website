@@ -1,0 +1,36 @@
+.navHeader {
+  width: 100vw;
+  height: 3.5rem;
+  background-color: hsl(101, 100%, 35%);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(75, 100%, 60%);
+}
+
+.navHeader nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3.5rem;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+}
+
+.navHeader ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+  display: flex;
+}
+
+.navHeader li {
+  margin-left: 2.5rem;
+}
