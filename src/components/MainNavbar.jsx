@@ -1,4 +1,6 @@
+import React from "react";
 import "../css/components/MainNavbar.css";
+import { Link } from "react-router-dom";
 
 function MainNavbar() {
   return (
@@ -6,12 +8,17 @@ function MainNavbar() {
       <div className="logo">Tea Time</div>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>List 1</li>
-          <li>List 2</li>
-          <li>List 3</li>
-          <li>List 4</li>
-          <li>List 5</li>
+          <li>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/ingredients">Ingredients</Link>
+          </li>
+          <li>
+            <Link to="mixes">Mixes</Link>
+          </li>
         </ul>
       </nav>
     </header>
