@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import "../css/views/home.css";
 import { teaData } from "../teas";
 
-function Home() {
+export default function Home() {
   return (
     <>
       <HomePageHeader />
       <div className="teaDispaly">
-        {teaData.map((teaData, id) => {
+        {teaData.map((teaData, key) => {
           return (
-            <div className="card" key={id}>
+            <div className="card" key={key}>
               <Teas
-                key={id}
+                id={key}
                 name={teaData.name}
                 tags={teaData.tags}
                 brewTime={teaData.brewTime}
@@ -35,13 +36,13 @@ const HomePageHeader = () => {
 const Teas = ({ name, tags, ingredients, brewTime }) => {
   return (
     <div className="wrapper">
-      <div className="teaCard">
-        <div className="category">{tags[0]}</div>
-        <div className="teaName">{name}</div>
-        <div className="teaImg"></div>
-      </div>
+      <Link to="/tea" state={[name, tags, ingredients, brewTime]}>
+        <div className="teaCard">
+          <div className="category">{tags[0]}</div>
+          <div className="teaName">{name}</div>
+          <div className="teaImg"></div>
+        </div>
+      </Link>
     </div>
   );
 };
-
-export default Home;
