@@ -3,19 +3,20 @@ import "../css/views/home.css";
 import { teaData } from "../teas";
 
 export default function Home() {
+  console.log(teaData);
   return (
     <>
       <HomePageHeader />
       <div className="teaDispaly">
-        {teaData.map((teaData, key) => {
+        {teaData.map((tea, key) => {
           return (
             <div className="card" key={key}>
               <Teas
-                id={key}
-                name={teaData.name}
-                tags={teaData.tags}
-                brewTime={teaData.brewTime}
-                ingredients={teaData.ingredients}
+                id={tea.id}
+                name={tea.name}
+                tags={tea.tags}
+                brewTime={tea.brewTime}
+                ingredients={tea.ingredients}
               />
             </div>
           );
@@ -36,7 +37,7 @@ const HomePageHeader = () => {
 const Teas = ({ name, tags, ingredients, brewTime }) => {
   return (
     <div className="wrapper">
-      <Link to="/tea" state={[name, tags, ingredients, brewTime]}>
+      <Link to="/tea" state={{ name, tags, ingredients, brewTime }}>
         <div className="teaCard">
           <div className="category">{tags[0]}</div>
           <div className="teaName">{name}</div>

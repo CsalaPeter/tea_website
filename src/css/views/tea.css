@@ -1,0 +1,36 @@
+.nameHeader {
+  display: grid;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 5rem;
+}
+
+.detView {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stringData {
+  margin-left: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.stringDet {
+  margin-bottom: 2rem;
+}
+
+label {
+  color: hsl(101, 100%, 35%);
+}
+
+#tags {
+  margin-top: 5px;
+}
+
+body {
+  background-color: hsl(75, 100%, 85%);
+}
