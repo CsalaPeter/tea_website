@@ -34,3 +34,37 @@ label {
 body {
   background-color: hsl(75, 100%, 85%);
 }
+
+.tagList {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tagList li {
+  float: left;
+}
+
+.tag {
+  background-color: hsl(120, 100%, 35%);
+  color: hsl(60, 100%, 50%);
+  position: relative;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 20px 0 20px;
+  margin: 0 10px 10px 0;
+  border-radius: 10px;
+}
+
+.tag::before {
+  background: hsl(60, 100%, 50%);
+  content: "";
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  height: 6px;
+  left: 8px;
+  width: 6px;
+  top: 10px;
+}

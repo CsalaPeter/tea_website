@@ -4,7 +4,11 @@ import "../css/views/tea.css";
 export default function Tea() {
   let { state } = useLocation();
   console.log(state);
-  const teaTags = state.tags.map((tags, key) => <li key={key}>{tags}</li>);
+  const teaTags = state.tags.map((tags, key) => (
+    <li className="tag" key={key}>
+      {tags}
+    </li>
+  ));
   const teaIngredients = state.ingredients.map((ingredients, key) => (
     <li key={key}>{ingredients}</li>
   ));
@@ -38,9 +42,9 @@ const TeaDetail = ({ tags, ingredients, brewTime }) => {
         <div></div>
       </div>
       <div className="stringData">
-        <label htmlFor="tags">Tags:</label>
+        <h3>Tags</h3>
         <div id="tags" className="stringDet">
-          {tags}
+          <ul className="tagList"> {tags} </ul>
         </div>
         <label htmlFor="ingredients">Ingredients:</label>
         <div id="ingredients" className="stringDet">
