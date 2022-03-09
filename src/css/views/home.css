@@ -1,7 +1,13 @@
+body {
+  overflow-x: hidden;
+  background-color: hsl(75, 100%, 85%);
+}
+
 .header {
   display: flex;
   justify-content: center;
   padding: 2rem;
+  color: hsl(101, 100%, 25%);
 }
 
 .teaDispaly {
@@ -30,7 +36,7 @@
   font-size: 0.8rem;
   font-weight: 700;
   margin-bottom: 5px;
-  color: hsl(75, 100%, 60%);
+  color: hsl(60, 100%, 50%);
   margin-top: 10px;
 }
 
