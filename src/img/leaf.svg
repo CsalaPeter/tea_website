@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="21px" viewBox="0 0 20 21" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="515.71649" y1="699.50507" x2="413.48505" y2="595.4682" gradientTransform="matrix(0.0956938,0,0,0.0954545,-30.485304,-51.907299)">
+<stop offset="0" style="stop-color:rgb(100%,100%,100%);stop-opacity:0;"/>
+<stop offset="0.662236" style="stop-color:rgb(39.607843%,78.039216%,20.392157%);stop-opacity:0.631373;"/>
+<stop offset="1" style="stop-color:rgb(86.666667%,100%,80.392157%);stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(20%,60%,0%);fill-opacity:1;" d="M 19.960938 0 C 17.347656 6.398438 20.488281 16.84375 6.5625 15.273438 C -1.984375 5.398438 17.191406 7.925781 19.960938 0 Z M 19.960938 0 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(20%,60%,0%);fill-opacity:1;" d="M 6.5625 15.273438 L 0 18.816406 L 1.09375 21 Z M 6.5625 15.273438 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 6.765625 14.863281 C 17.804688 3.828125 18.867188 2.523438 18.867188 2.523438 C 13.289062 8.214844 0.871094 6.578125 6.765625 14.863281 Z M 6.765625 14.863281 "/>
+<path style="fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke:rgb(0%,47.058824%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 390.333535 701.465601 C 418.254629 663.243875 461.605801 627.477506 493.119082 594.166494 C 508.181778 578.247595 515.243692 575.178399 520.427871 559.341345 " transform="matrix(0.0956938,0,0,0.0954545,-30.485304,-51.907299)"/>
+<path style="fill:none;stroke-width:3.6;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,38.039216%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 387.843496 702.734202 C 418.662832 699.583161 445.196035 716.688815 481.362832 682.109202 C 518.223574 646.792982 516.38666 566.461881 518.060293 565.929887 " transform="matrix(0.0956938,0,0,0.0954545,-30.485304,-51.907299)"/>
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(46.666667%,76.862745%,32.156863%);fill-opacity:1;" d="M 0.136719 18.851562 L 1.195312 19.773438 L 5.945312 15.683594 Z M 0.136719 18.851562 "/>
+</g>
+</svg>

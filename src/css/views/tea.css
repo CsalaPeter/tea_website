@@ -3,9 +3,10 @@
   justify-content: center;
   font-size: 40px;
   margin-bottom: 5rem;
+  color: hsl(101, 100%, 25%);
 }
 
-.detView {
+.detailView {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -19,12 +20,8 @@ li {
   list-style: none;
 }
 
-.stringDet {
+.stringDetail {
   margin-bottom: 2rem;
-}
-
-label {
-  color: hsl(101, 100%, 35%);
 }
 
 #tags {
@@ -33,6 +30,10 @@ label {
 
 body {
   background-color: hsl(75, 100%, 85%);
+}
+
+h3 {
+  color: hsl(101, 100%, 35%);
 }
 
 .tagList {
@@ -61,10 +62,28 @@ body {
   background: hsl(60, 100%, 50%);
   content: "";
   border-radius: 10px;
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 2px rgba(0, 0, 0, 0.25);
   position: absolute;
   height: 6px;
   left: 8px;
   width: 6px;
   top: 10px;
+}
+
+.ingredientsList li {
+  margin-bottom: 5px;
+  margin-left: -40px;
+  font-size: large;
+}
+
+.ingredient::before {
+  content: url("../../img/leaf.svg");
+  display: inline-block;
+  height: 20px;
+  width: 21px;
+  margin-right: 10px;
+}
+
+#brewTime {
+  font-size: large;
 }

@@ -10,12 +10,14 @@ export default function Tea() {
     </li>
   ));
   const teaIngredients = state.ingredients.map((ingredients, key) => (
-    <li key={key}>{ingredients}</li>
+    <li className="ingredient" key={key}>
+      {ingredients}
+    </li>
   ));
 
   return (
     <>
-      <div className="teaDet">
+      <div className="teaDetail">
         <TeaPageHeader name={state.name} />
         <TeaDetail
           brewTime={state.brewTime}
@@ -37,21 +39,21 @@ const TeaPageHeader = ({ name }) => {
 
 const TeaDetail = ({ tags, ingredients, brewTime }) => {
   return (
-    <div className="detView">
+    <div className="detailView">
       <div className="picture">
         <div></div>
       </div>
       <div className="stringData">
         <h3>Tags</h3>
-        <div id="tags" className="stringDet">
+        <div id="tags" className="stringDetail">
           <ul className="tagList"> {tags} </ul>
         </div>
-        <label htmlFor="ingredients">Ingredients:</label>
-        <div id="ingredients" className="stringDet">
-          {ingredients}
+        <h3>Ingredients</h3>
+        <div id="ingredients" className="stringDetail">
+          <ul className="ingredientsList">{ingredients}</ul>
         </div>
-        <label htmlFor="brewTime">Brewing Time:</label>
-        <div id="brewTime" className="stringDet">
+        <h3>Brewing Time</h3>
+        <div id="brewTime" className="stringDetail">
           {brewTime}
         </div>
       </div>
