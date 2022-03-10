@@ -21,6 +21,8 @@
   width: 30vw;
   display: flex;
   align-items: center;
+  justify-content: right;
+  padding-right: 2rem;
 }
 
 .navHeader ul {

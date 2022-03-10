@@ -6,6 +6,10 @@
   color: hsl(101, 100%, 25%);
 }
 
+.teaDetail {
+  min-height: calc(100vh - 152px);
+}
+
 .detailView {
   display: grid;
   grid-template-columns: 1fr 1fr;

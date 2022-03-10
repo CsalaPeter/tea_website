@@ -13,9 +13,6 @@ function MainNavbar() {
               Home
             </Link>
           </li>
-          <li>
-            <Link to="/ingredients">Ingredients</Link>
-          </li>
         </ul>
       </nav>
     </header>
