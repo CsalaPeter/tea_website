@@ -53,6 +53,24 @@ export const teaData = [
   },
 
   {
+    id: "5",
+    name: "Arabic Night",
+    tags: ["Black Tea", "Green Tea"],
+    ingredients: [
+      "Sencha (Green Tea)",
+      "Black Tea",
+      "Resin",
+      "Papaya",
+      "Rose Petals",
+      "Mallow",
+      "Sunflower Petals",
+    ],
+    brewTime: "2-3 min",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minima nam recusandae ducimus omnis quo ab, repudiandae illum fugiat labore?",
+  },
+
+  {
     id: "6",
     name: "Flower Dance",
     tags: ["Roibos", "Flowers"],
