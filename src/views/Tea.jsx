@@ -20,6 +20,7 @@ export default function Tea() {
       <div className="teaDetail">
         <TeaPageHeader name={state.name} />
         <TeaDetail
+          image={state.image}
           brewTime={state.brewTime}
           tags={teaTags}
           ingredients={teaIngredients}
@@ -37,11 +38,11 @@ const TeaPageHeader = ({ name }) => {
   );
 };
 
-const TeaDetail = ({ tags, ingredients, brewTime }) => {
+const TeaDetail = ({ tags, ingredients, brewTime, image }) => {
   return (
     <div className="detailView">
       <div className="picture">
-        <div></div>
+        <img src={process.env.PUBLIC_URL + image} alt="Végre jó"></img>
       </div>
       <div className="stringData">
         <h3>Tags</h3>

@@ -77,7 +77,7 @@ h3 {
 }
 
 .ingredient::before {
-  content: url("../../img/leaf.svg");
+  content: url("/public/img/leaf.svg");
   display: inline-block;
   height: 20px;
   width: 21px;
@@ -86,4 +86,10 @@ h3 {
 
 #brewTime {
   font-size: large;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

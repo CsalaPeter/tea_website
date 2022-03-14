@@ -17,6 +17,8 @@ export default function Home() {
                 tags={tea.tags}
                 brewTime={tea.brewTime}
                 ingredients={tea.ingredients}
+                description={tea.description}
+                image={tea.image}
               />
             </div>
           );
@@ -34,10 +36,13 @@ const HomePageHeader = () => {
   );
 };
 
-const Teas = ({ name, tags, ingredients, brewTime }) => {
+const Teas = ({ name, tags, ingredients, brewTime, description, image }) => {
   return (
     <div className="wrapper">
-      <Link to="/tea" state={{ name, tags, ingredients, brewTime }}>
+      <Link
+        to="/tea"
+        state={{ name, tags, ingredients, brewTime, description, image }}
+      >
         <div className="teaCard">
           <div className="category">{tags[0]}</div>
           <div className="teaName">{name}</div>

@@ -14,6 +14,7 @@ export const teaData = [
     brewTime: "3-4 min",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minima nam recusandae ducimus omnis quo ab, repudiandae illum fugiat labore?",
+    image: "/img/test.jpg",
   },
 
   {

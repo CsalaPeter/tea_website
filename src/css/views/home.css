@@ -13,7 +13,7 @@ body {
 .teaDispaly {
   max-width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
   gap: 2rem;
   margin: auto;
   padding-left: 1.5rem;
@@ -21,7 +21,8 @@ body {
 
 .teaCard {
   background: hsl(101, 100%, 35%);
-  width: 400px;
+  width: 410px;
+  height: 472px;
   display: inline-block;
   margin: auto;
   border: 1rem;
@@ -29,6 +30,11 @@ body {
   text-align: center;
   box-shadow: -1px 15px 30px -10px black;
   margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.teaCard:hover {
+  background: hsl(101, 100%, 25%);
 }
 
 .category {
@@ -48,8 +54,11 @@ body {
 }
 
 .teaImg {
+  display: flex;
   position: relative;
   height: 400px;
   max-width: 400px;
-  background: url(../../test.jpg);
+  background: url(/public/img/test.jpg);
+  margin-left: 5px;
+  border-radius: 10px;
 }

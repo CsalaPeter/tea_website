@@ -8,12 +8,12 @@ footer {
 }
 
 .gitHub {
-  content: url(../../img/GitHub-Mark-32px.png);
+  content: url(/public/img/GitHub-Mark-32px.png);
   display: inline-block;
 }
 
 .linkedIn {
-  content: url(../../img/Linked-In-32px.png);
+  content: url(/public/img/Linked-In-32px.png);
   margin-left: 10px;
 }
 

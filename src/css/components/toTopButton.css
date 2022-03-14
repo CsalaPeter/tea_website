@@ -8,6 +8,7 @@
   bottom: 30px;
   right: 30px;
   background-color: hsl(101, 100%, 25%);
+  z-index: 1;
 }
 
 .button::after {
