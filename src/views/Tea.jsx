@@ -1,5 +1,5 @@
-import { useLocation } from "react-router-dom";
-import "../css/views/tea.css";
+import { useLocation } from 'react-router-dom';
+import '../css/views/tea.css';
 
 export default function Tea() {
   let { state } = useLocation();
@@ -19,12 +19,7 @@ export default function Tea() {
     <>
       <div className="teaDetail">
         <TeaPageHeader name={state.name} />
-        <TeaDetail
-          image={state.image}
-          brewTime={state.brewTime}
-          tags={teaTags}
-          ingredients={teaIngredients}
-        />
+        <TeaDetail image={state.image} brewTime={state.brewTime} tags={teaTags} ingredients={teaIngredients} />
       </div>
     </>
   );
@@ -42,7 +37,7 @@ const TeaDetail = ({ tags, ingredients, brewTime, image }) => {
   return (
     <div className="detailView">
       <div className="picture">
-        <img src={process.env.PUBLIC_URL + image} alt="Végre jó"></img>
+        <img src={process.env.PUBLIC_URL + image} alt="Végre jó" className="teaImg"></img>
       </div>
       <div className="stringData">
         <h3>Tags</h3>

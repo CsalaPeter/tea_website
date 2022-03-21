@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import "../css/views/home.css";
-import { teaData } from "../teas";
+import { Link } from 'react-router-dom';
+import '../css/views/home.css';
+import { teaData } from '../teas';
 
 export default function Home() {
   console.log(teaData);
@@ -39,14 +39,11 @@ const HomePageHeader = () => {
 const Teas = ({ name, tags, ingredients, brewTime, description, image }) => {
   return (
     <div className="wrapper">
-      <Link
-        to="/tea"
-        state={{ name, tags, ingredients, brewTime, description, image }}
-      >
+      <Link to="/tea" state={{ name, tags, ingredients, brewTime, description, image }}>
         <div className="teaCard">
           <div className="category">{tags[0]}</div>
           <div className="teaName">{name}</div>
-          <div className="teaImg"></div>
+          <img src={process.env.PUBLIC_URL + image} alt="IMG" className="teaCardImg"></img>
         </div>
       </Link>
     </div>

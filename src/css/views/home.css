@@ -53,12 +53,11 @@ body {
   color: black;
 }
 
-.teaImg {
+.teaCardImg {
   display: flex;
   position: relative;
   height: 400px;
-  max-width: 400px;
-  background: url(/public/img/test.jpg);
+  width: 400px;
   margin-left: 5px;
   border-radius: 10px;
 }
